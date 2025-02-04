@@ -42,6 +42,7 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Clique sur le bouton en bas là'),
           BigCard(pair: pair),
