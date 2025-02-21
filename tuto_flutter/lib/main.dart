@@ -73,7 +73,7 @@ class BigCard extends StatelessWidget {
     final theme = Theme.of(context);
     final style = theme.textTheme.displayMedium!.copyWith(
         color: theme.colorScheme.onPrimary,
-        backgroundColor: const Color.fromARGB(255, 233, 8, 101));
+        backgroundColor: const Color.fromARGB(255, 90, 18, 48));
     return Card(
       color: theme.colorScheme.primary,
       child: Padding(
