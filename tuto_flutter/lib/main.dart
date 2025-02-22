@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color.fromARGB(255, 1, 34, 182)),
+              seedColor: const Color.fromARGB(255, 16, 26, 71)),
         ),
         home: MyHomePage(),
       ),
@@ -43,18 +43,20 @@ class MyHomePage extends StatelessWidget {
     var pair = appState.current;
 
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text('Clique sur le bouton en bas là'),
-          BigCard(pair: pair),
-          ElevatedButton(
-            onPressed: () {
-              appState.getNext();
-            },
-            child: Text('Next'),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Clique sur le bouton en bas là'),
+            BigCard(pair: pair),
+            ElevatedButton(
+              onPressed: () {
+                appState.getNext();
+              },
+              child: Text('Next'),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -72,8 +74,9 @@ class BigCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final style = theme.textTheme.displayMedium!.copyWith(
-        color: theme.colorScheme.onPrimary,
-        backgroundColor: const Color.fromARGB(255, 90, 18, 48));
+      color: theme.colorScheme.onPrimary,
+      //backgroundColor: const Color.fromARGB(255, 90, 18, 48)
+    );
     return Card(
       color: theme.colorScheme.primary,
       child: Padding(
