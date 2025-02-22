@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import '../models/media.dart';
 
 class FavoritesProvider extends ChangeNotifier {
-  // List to store favorite media
+  // Liste qui récupère les médias favoris
   final List<Media> _favoriteMedia = [];
 
   List<Media> get favoriteMedia => _favoriteMedia;
 
-  // Add or remove media from favorites
+  // Ajoute et enlève les médias des favoris
   void toggleFavorite(Media media) {
     if (_favoriteMedia.contains(media)) {
       _favoriteMedia.remove(media);
     } else {
       _favoriteMedia.add(media);
     }
-    notifyListeners(); // Notify listeners when the favorite list changes
+    notifyListeners();
   }
 
   bool isFavorite(Media media) {

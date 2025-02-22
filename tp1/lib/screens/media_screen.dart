@@ -2,27 +2,117 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/media.dart';
 import '../providers/favorites_provider.dart';
-import 'media_detail_screen.dart'; // Importing the detail screen
+import 'media_detail_screen.dart';
 
 class MediaScreen extends StatelessWidget {
+  //Liste des jeux vidéos
   final List<Media> videoGames = [
     Media(
         title: "Zelda Breath of the Wild",
         image: "assets/zelda.jpeg",
         description: "Aventure épique",
+        rating: 3),
+    Media(
+        title: "Pokemon Arceus",
+        image: "assets/zelda.jpeg",
+        description: "...",
+        rating: 2),
+    Media(
+        title: "Hearthstone",
+        image: "assets/zelda.jpeg",
+        description: "...",
         rating: 4.8),
-    // Add more video games here if necessary
+    Media(
+        title: "League of Legends",
+        image: "assets/zelda.jpeg",
+        description: "...",
+        rating: 4.8),
+    Media(
+        title: "World of Warcraft",
+        image: "assets/zelda.jpeg",
+        description: "...",
+        rating: 4.8),
+    Media(
+        title: "Valorant",
+        image: "assets/zelda.jpeg",
+        description: "...",
+        rating: 4.8),
+    Media(
+        title: "Overwatch",
+        image: "assets/zelda.jpeg",
+        description: "...",
+        rating: 4.8),
+    Media(
+        title: "Fall Guys",
+        image: "assets/zelda.jpeg",
+        description: "...",
+        rating: 4.8),
+    Media(
+        title: "Minecraft",
+        image: "assets/zelda.jpeg",
+        description: "...",
+        rating: 4.8),
+    Media(
+        title: "GTA VI",
+        image: "assets/zelda.jpeg",
+        description: "à venir...",
+        rating: 4.8),
   ];
-
+  //Liste des séries d'animation
   final List<Media> animationSeries = [
+    Media(
+        title: "Attack on Titans (SNK)",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
+    Media(
+        title: "Chainsaw man",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
     Media(
         title: "Demon Slayer",
         image: "assets/demonslayer.jpg",
         description: "Un anime incroyable",
         rating: 4.7),
-    // Add more series here if necessary
+    Media(
+        title: "Darling in the Franxx",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
+    Media(
+        title: "Your lie in April",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
+    Media(
+        title: "Oshi No Ko",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
+    Media(
+        title: "Frieren",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
+    Media(
+        title: "Goldorak",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
+    Media(
+        title: "Eighty-Six",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
+    Media(
+        title: "Shimoneta",
+        image: "assets/demonslayer.jpg",
+        description: "Un anime incroyable",
+        rating: 4.7),
   ];
 
+  //Liste des films d'animation
   final List<Media> animationMovies = [
     Media(
         title: "Wall-E",
@@ -30,9 +120,60 @@ class MediaScreen extends StatelessWidget {
         description:
             "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
         rating: 4.9),
-    // Add more movies here if necessary
+    Media(
+        title: "Shrek",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "Mario Bros",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "Your Name",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "I want to eat your pancreas",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "Weathering With You",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "Spider Man : Into the Spider Verse",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "Up",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "Suzume",
+        image: "assets/walle.jpeg",
+        description:
+            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
+        rating: 4.9),
+    Media(
+        title: "Spider Man : Beyond the Spider Verse",
+        image: "assets/walle.jpeg",
+        description: "arriving in 2025",
+        rating: 4.9),
   ];
-
   MediaScreen({super.key});
 
   @override
@@ -79,14 +220,13 @@ class MediaScreen extends StatelessWidget {
                       icon: Icon(isFav ? Icons.favorite : Icons.favorite_border,
                           color: Colors.red),
                       onPressed: () {
-                        favoritesProvider
-                            .toggleFavorite(media); // Toggle favorite status
+                        favoritesProvider.toggleFavorite(media);
                       },
                     );
                   },
                 ),
                 onTap: () {
-                  // Navigate to the media detail screen
+                  // Pour ouvrir un onglet avec le détails de chaque média
                   Navigator.push(
                     context,
                     MaterialPageRoute(

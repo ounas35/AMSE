@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
 import 'screens/media_screen.dart';
-import 'screens/favorites_screen.dart'; // Import the FavoritesScreen
+import 'screens/favorites_screen.dart';
 import 'screens/about_screen.dart';
-import 'providers/favorites_provider.dart'; // Import the provider
+import 'providers/favorites_provider.dart';
 
 void main() {
   runApp(MyGeekHubApp());
@@ -17,10 +17,11 @@ class MyGeekHubApp extends StatefulWidget {
 
 class _MyGeekHubAppState extends State<MyGeekHubApp> {
   int _currentIndex = 0;
+  //Liste des différents éléments de la bar de navigation en bas
   final List<Widget> _screens = [
     HomeScreen(),
     MediaScreen(),
-    FavoritesScreen(), // Add the FavoritesScreen here
+    FavoritesScreen(),
     AboutScreen(),
   ];
 
@@ -41,13 +42,12 @@ class _MyGeekHubAppState extends State<MyGeekHubApp> {
                 _currentIndex = index;
               });
             },
-            backgroundColor: Colors
-                .blueAccent, // Set background color for the BottomNavigationBar
-            selectedItemColor: Colors.white, // Color of the selected item
-            unselectedItemColor: Colors.grey, // Color of the unselected items
-            selectedFontSize: 16, // Font size for the selected item
-            unselectedFontSize: 14, // Font size for the unselected items
-            showUnselectedLabels: true, // Show unselected labels
+            backgroundColor: const Color.fromARGB(255, 36, 93, 190),
+            selectedItemColor: Colors.white,
+            unselectedItemColor: Colors.grey,
+            selectedFontSize: 16,
+            unselectedFontSize: 14,
+            showUnselectedLabels: true,
             items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
@@ -55,7 +55,7 @@ class _MyGeekHubAppState extends State<MyGeekHubApp> {
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.movie),
-                label: 'Media',
+                label: 'Medias',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),

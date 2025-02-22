@@ -4,7 +4,6 @@ import '../models/media.dart';
 class MediaDetailScreen extends StatelessWidget {
   final Media media;
 
-  // Constructeur pour passer le média
   const MediaDetailScreen({super.key, required this.media});
 
   @override

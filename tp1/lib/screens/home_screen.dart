@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         child: Text(
           "Welcome on MyGeekHub !",
           style: TextStyle(
-            fontSize: 30, // Large font size
+            fontSize: 30,
             fontWeight: FontWeight.bold,
           ),
         ),

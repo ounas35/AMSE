@@ -1,3 +1,4 @@
+//Classe avec les différentes informations d'un média
 class Media {
   final String title;
   final String image;
