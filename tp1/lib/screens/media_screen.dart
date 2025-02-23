@@ -20,207 +20,218 @@ class _MediaScreenState extends State<MediaScreen> {
         title: "Zelda Breath of the Wild",
         image: "assets/zeldabreathofthewild.jpg",
         description:
-            "Princess Zelda is a major supporting character in The Legend of Zelda: Breath of the Wild and a primary protagonist in its prequel Age of Calamity. She is the current princess of Hyrule and the latest member of the royal family to inherit the sealing powers of the goddess Hylia. ",
+            "An open-world adventure where Link explores Hyrule, solves puzzles, and battles foes to save Princess Zelda.",
         rating: 4.7,
         type: 'Action-adventure'),
     Media(
         title: "Pokemon Arceus",
         image: "assets/pokemonarceus.jpg",
         description:
-            "Pokémon Legends: Arceus differs from previous Pokémon games as it takes place in an open world. The game is set in the Sinnoh region, long before it was colonized by humans. The player will still take on the role of a Pokémon trainer, this time tasked with creating the first Pokédex of Sinnoh.",
+            "A Pokémon RPG set in ancient Sinnoh, where players explore an open world and complete the first Pokédex.",
         rating: 3.9,
         type: 'Action role-playing'),
     Media(
         title: "Hearthstone",
         image: "assets/hearthstone.jpg",
         description:
-            "This card game is played with the heroes and monsters from the Warcraft universe. You need to build a 'deck' (card pack) of 30 cards by selecting a champion from several defined classes, each of which has a different effect and thus allows for the customization of the play style.",
+            "A digital card game set in the Warcraft universe, where players build decks and battle opponents.",
         rating: 4.2,
         type: 'Digital collectible card game'),
     Media(
         title: "League of Legends",
         image: "assets/leagueoflegends.jpg",
         description:
-            "Team strategy game in which two teams of five champions compete to destroy the opposing base. Choose from over 140 available champions, head into battle, skillfully eliminate your opponents, and take down enemy turrets to achieve victory.",
+            "A MOBA where two teams of five champions battle to destroy the enemy base.",
         rating: 3.0,
         type: 'Multiplayer online battle arena (MOBA)'),
     Media(
         title: "World of Warcraft",
         image: "assets/worldofwarcraft.jpg",
         description:
-            "World of Warcraft immerses players in a vibrant fantasy universe filled with diverse races, classes, and lore. Players can team up with others to tackle challenging dungeons, engage in player-versus-player combat, or simply explore the expansive environments. The game continually evolves through expansions and updates, introducing new content and maintaining an active player community.",
+            "An MMORPG where players explore Azeroth, complete quests, and engage in PvE and PvP battles.",
         rating: 4.5,
-        type: 'Massively multiplayer online role-playing game (MMORPG)'),
+        type: 'MMORPG'),
     Media(
         title: "Valorant",
         image: "assets/valorant.jpg",
         description:
-            "Valorant is a free-to-play tactical FPS by Riot Games where two teams of five players compete to plant or defuse a bomb, while using unique agent abilities. Players need to work together, strategize, and rely on precise shooting. Each agent has distinct abilities, adding depth to gameplay. The main mode is a search-and-destroy style match, with the first team to win 13 rounds claiming victory. The game emphasizes team coordination, strategy, and quick reflexes.",
-        rating: 4,
+            "A tactical FPS where two teams compete using precise shooting and unique agent abilities.",
+        rating: 4.0,
         type: 'Hero shooter, Tactical shooter'),
     Media(
         title: "Overwatch 2",
         image: "assets/overwatch.jpg",
         description:
-            "Overwatch was a beacon of hope for the exhausted survivors, eager to rebuild their war-torn world. Once the Crisis ended, its role expanded to addressing humanity's most critical issues and ushering in a new era of optimism and prosperity. Two teams fight to control a robot in the center of the map and push it towards the enemy's base. The team that moves the robot the furthest into the enemy's territory wins the game.",
+            "A team-based FPS where players use heroes with unique abilities to secure objectives.",
         rating: 2.5,
-        type: 'First-person shooter (FPS), Hero shooter'),
+        type: 'FPS, Hero shooter'),
     Media(
         title: "Fall Guys",
         image: "assets/fallguys.jpg",
         description:
-            "Fall Guys is a chaotic battle royale where 60 players compete in obstacle courses. Players navigate through various mini-games, avoiding elimination until only one remains. The last player standing wins a crown. The game features colorful graphics, whimsical characters, and a lighthearted tone, making it fun for players of all ages.",
+            "A chaotic battle royale where 60 players compete in obstacle course mini-games.",
         rating: 3.5,
-        type: '	Battle royale, platform'),
+        type: 'Battle royale, Platform'),
     Media(
         title: "Minecraft",
         image: "assets/minecraft.jpg",
         description:
-            "Minecraft is a sandbox game where players explore a blocky world, gather resources, and build structures. Players can also survive against monsters, craft items, and engage in various adventures. It offers creative and survival modes, allowing for limitless possibilities in gameplay. The game has a large community and supports mods for additional content.",
+            "A sandbox game where players build, explore, and survive in a blocky world.",
         rating: 4.5,
-        type: 'Sandbox, survival'),
+        type: 'Sandbox, Survival'),
     Media(
         title: "Grand Theft Auto VI",
         image: "assets/gta6.jpg",
         description: "Coming soon...",
-        rating: 0,
-        type: '	Action-adventure'),
-  ];
-  //Liste des séries d'animation
-  final List<Media> animatedSeries = [
-    Media(
-        title: "Attack on Titans",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Chainsaw man",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Demon Slayer",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Darling in the Franxx",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Your lie in April",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Oshi No Ko",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Frieren",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Goldorak",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Eighty-Six",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
-    Media(
-        title: "Shimoneta",
-        image: "assets/demonslayer.jpg",
-        description: "Un anime incroyable",
-        rating: 4.7,
-        type: ''),
+        rating: 0.0,
+        type: 'Action-adventure'),
   ];
 
-  //Liste des films d'animation
+// Liste des séries d'animation
+  final List<Media> animatedSeries = [
+    Media(
+        title: "Attack on Titan",
+        image: "../assets/attackontitan.jpg",
+        description:
+            "In a world where humanity lives behind immense walls to protect themselves from Titans, Eren Yeager vows to eliminate them after witnessing his mother's death.",
+        rating: 4.6,
+        type: 'Action, Dark fantasy, Post-apocalyptic'),
+    Media(
+        title: "Chainsaw Man",
+        image: "../assets/chainsawman.jpg",
+        description:
+            "Denji, a young devil hunter struggling with debt, merges with his pet chainsaw demon Pochita after a tragic betrayal, becoming Chainsaw Man.",
+        rating: 4.3,
+        type: 'Action, Comedy horror, Dark fantasy'),
+    Media(
+        title: "Demon Slayer",
+        image: "../assets/demonslayer.jpg",
+        description:
+            "Tanjiro Kamado embarks on a journey to become a Demon Slayer and cure his sister Nezuko, who has been transformed into a demon.",
+        rating: 4.3,
+        type: 'Adventure, Dark fantasy, Martial arts'),
+    Media(
+        title: "Darling in the Franxx",
+        image: "../assets/darlinginthefranxx.jpg",
+        description:
+            "In a post-apocalyptic world, children pilot mechas called Franxx to defend humanity. Hiro, an unremarkable pilot, meets the mysterious Zero Two.",
+        rating: 3.6,
+        type: 'Mecha, Romance, Sci-fi'),
+    Media(
+        title: "Your Lie in April",
+        image: "../assets/yourlieinapril.jpg",
+        description:
+            "A piano prodigy who lost his ability to hear music finds new inspiration when he meets a passionate violinist.",
+        rating: 4.3,
+        type: 'Romance, Drama, Music'),
+    Media(
+        title: "Oshi No Ko",
+        image: "../assets/oshinoko.jpg",
+        description:
+            "A reincarnated doctor follows the life of an idol and navigates the dark truths of the entertainment industry.",
+        rating: 4.0,
+        type: 'Drama, Mystery, Supernatural'),
+    Media(
+        title: "Frieren",
+        image: "../assets/frieren.jpg",
+        description:
+            "An elven mage embarks on a journey to understand human emotions long after her heroic adventures have ended.",
+        rating: 4.1,
+        type: 'Fantasy, Adventure, Drama'),
+    Media(
+        title: "Goldorak",
+        image: "../assets/goldorak.jpg",
+        description:
+            "A giant robot anime following Actarus, a prince from a distant planet, who fights to defend Earth.",
+        rating: 3.9,
+        type: 'Mecha, Sci-fi, Action'),
+    Media(
+        title: "Eighty-Six",
+        image: "../assets/eightysix.jpg",
+        description:
+            "A war story about young soldiers operating unmanned drones, uncovering the dark truths behind their existence.",
+        rating: 4.1,
+        type: 'Mecha, Drama, War'),
+    Media(
+        title: "Shimoneta",
+        image: "../assets/shimoneta.jpg",
+        description:
+            "In a world where dirty jokes are illegal, a rebellious group fights for freedom of expression.",
+        rating: 3.5,
+        type: 'Comedy, Ecchi, Dystopian'),
+  ];
+
+// Liste des films d'animation
   final List<Media> animatedFilms = [
     Media(
         title: "Wall-E",
-        image: "assets/walle.jpeg",
+        image: "../assets/walle.jpeg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "A small waste-collecting robot discovers the beauty of life and love in a dystopian future where Earth is abandoned.",
+        rating: 4.2,
+        type: 'Sci-fi, Adventure, Romance'),
     Media(
         title: "Shrek",
-        image: "assets/walle.jpeg",
+        image: "../assets/shrek.jpg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "A grumpy ogre's life is turned upside down when he embarks on a journey to rescue a princess.",
+        rating: 4.0,
+        type: 'Comedy, Fantasy, Adventure'),
     Media(
-        title: "Mario Bros",
-        image: "assets/walle.jpeg",
+        title: "The Super Mario Bros. Movie",
+        image: "../assets/mariobros.jpg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "Mario and Luigi embark on a high-stakes adventure to save the Mushroom Kingdom from Bowser.",
+        rating: 3.6,
+        type: 'Action, Comedy, Adventure'),
     Media(
         title: "Your Name",
-        image: "assets/walle.jpeg",
+        image: "../assets/yourname.jpg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "Two teenagers mysteriously swap bodies and form a deep connection across time and space.",
+        rating: 4.2,
+        type: 'Romance, Drama, Fantasy'),
     Media(
-        title: "I want to eat your pancreas",
-        image: "assets/walle.jpeg",
+        title: "I Want to Eat Your Pancreas",
+        image: "../assets/iwanttoeatyourpancreas.jpg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "A quiet boy forms an unexpected bond with a terminally ill girl who lives life to the fullest.",
+        rating: 4.0,
+        type: 'Drama, Romance, Slice of Life'),
     Media(
         title: "Weathering With You",
-        image: "assets/walle.jpeg",
+        image: "../assets/weatheringwithyou.jpg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "A runaway boy meets a girl with the ability to control the weather, leading to a story of love and sacrifice.",
+        rating: 3.8,
+        type: 'Fantasy, Romance, Drama'),
     Media(
-        title: "Spider Man : Into the Spider Verse",
-        image: "assets/walle.jpeg",
+        title: "Spider-Man: Into the Spider-Verse",
+        image: "../assets/spidermanintothespiderverse.jpg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "Miles Morales becomes Spider-Man and meets alternate versions of himself from different dimensions.",
+        rating: 4.2,
+        type: 'Action, Sci-fi, Superhero'),
     Media(
         title: "Up",
-        image: "assets/walle.jpeg",
+        image: "../assets/up.jpg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "A widowed old man fulfills his late wife's dream by flying his house to South America with a young stowaway.",
+        rating: 4.2,
+        type: 'Adventure, Comedy, Drama'),
     Media(
         title: "Suzume",
-        image: "assets/walle.jpeg",
+        image: "../assets/suzume.jpeg",
         description:
-            "In the 29th century, Earth has become a garbage-strewn wasteland due to rampant consumerism and corporate greed.",
-        rating: 4.9,
-        type: ''),
+            "A high school girl embarks on a mysterious journey to close supernatural doors causing disasters across Japan.",
+        rating: 4.6,
+        type: 'Fantasy, Adventure, Drama'),
     Media(
-        title: "Spider Man : Beyond the Spider Verse",
-        image: "assets/walle.jpeg",
+        title: "Spider-Man: Beyond the Spider-Verse",
+        image: "../assets/spidermanbeyondthespiderverse.jpg",
         description: "Coming soon...",
-        rating: 4.9,
-        type: ''),
+        rating: 0.0,
+        type: 'Action, Sci-fi, Superhero'),
   ];
 
   void _sortMedia(List<Media> mediaList) {
