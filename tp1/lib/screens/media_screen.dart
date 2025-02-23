@@ -9,52 +9,52 @@ class MediaScreen extends StatelessWidget {
   final List<Media> videoGames = [
     Media(
         title: "Zelda Breath of the Wild",
-        image: "assets/zelda.jpeg",
+        image: "assets/zeldabreathofthewild.jpg",
         description: "Aventure épique",
         rating: 3),
     Media(
         title: "Pokemon Arceus",
-        image: "assets/zelda.jpeg",
+        image: "assets/pokemonarceus.jpg",
         description: "...",
         rating: 2),
     Media(
         title: "Hearthstone",
-        image: "assets/zelda.jpeg",
+        image: "assets/hearthstone.jpg",
         description: "...",
         rating: 4.8),
     Media(
         title: "League of Legends",
-        image: "assets/zelda.jpeg",
+        image: "assets/leagueoflegends.jpg",
         description: "...",
         rating: 4.8),
     Media(
         title: "World of Warcraft",
-        image: "assets/zelda.jpeg",
+        image: "assets/worldofwarcraft.jpg",
         description: "...",
         rating: 4.8),
     Media(
         title: "Valorant",
-        image: "assets/zelda.jpeg",
+        image: "assets/valorant.jpg",
         description: "...",
         rating: 4.8),
     Media(
-        title: "Overwatch",
-        image: "assets/zelda.jpeg",
+        title: "Overwatch 2",
+        image: "assets/overwatch.jpg",
         description: "...",
         rating: 4.8),
     Media(
         title: "Fall Guys",
-        image: "assets/zelda.jpeg",
+        image: "assets/fallguys.jpg",
         description: "...",
         rating: 4.8),
     Media(
         title: "Minecraft",
-        image: "assets/zelda.jpeg",
+        image: "assets/minecraft.jpg",
         description: "...",
         rating: 4.8),
     Media(
         title: "GTA VI",
-        image: "assets/zelda.jpeg",
+        image: "assets/gta6.jpg",
         description: "à venir...",
         rating: 4.8),
   ];

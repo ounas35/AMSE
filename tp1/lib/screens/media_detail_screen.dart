@@ -18,7 +18,7 @@ class MediaDetailScreen extends StatelessWidget {
             Image.asset(
               media.image,
               width: double.infinity,
-              height: 200,
+              height: 400,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16),

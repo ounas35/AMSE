@@ -20,7 +20,16 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/zelda.jpeg
+    - assets/zeldabreathofthewild.jpg
+    - assets/pokemonarceus.jpg
+    - assets/leagueoflegends.jpg
+    - assets/hearthstone.jpg
+    - assets/valorant.jpg
+    - assets/gta6.jpg
+    - assets/fallguys.jpg
+    - assets/overwatch.jpg
+    - assets/worldofwarcraft.jpg
+    - assets/minecraft.jpg
     - assets/demonslayer.jpg
     - assets/walle.jpeg
   uses-material-design: true
