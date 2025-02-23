@@ -18,25 +18,25 @@ class MediaDetailScreen extends StatelessWidget {
             Image.asset(
               media.image,
               width: double.infinity,
-              height: 400,
+              height: 200,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16),
             Text(
-              media.title,
+              media.type,
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 8),
             Text(
               media.description,
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 15),
             ),
             SizedBox(height: 8),
             Row(
               children: [
                 Icon(Icons.star, color: Colors.yellow),
                 Text(
-                  "${media.rating}/5",
+                  "${media.rating}/5, review from google",
                   style: TextStyle(fontSize: 18),
                 ),
               ],

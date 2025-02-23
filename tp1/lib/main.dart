@@ -10,8 +10,10 @@ void main() {
   runApp(MyGeekHubApp());
 }
 
+// ignore: use_key_in_widget_constructors
 class MyGeekHubApp extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _MyGeekHubAppState createState() => _MyGeekHubAppState();
 }
 
