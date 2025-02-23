@@ -34,17 +34,22 @@ class _MyGeekHubAppState extends State<MyGeekHubApp> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'MyGeekHub',
-        theme: ThemeData.dark(),
+        theme: ThemeData.dark().copyWith(
+          splashFactory: NoSplash.splashFactory,
+        ),
         home: Scaffold(
-          body: _screens[_currentIndex],
+          body: IndexedStack(
+            index: _currentIndex,
+            children: _screens,
+          ),
           bottomNavigationBar: BottomNavigationBar(
-            currentIndex: _currentIndex,
+            type: BottomNavigationBarType.fixed,
             onTap: (index) {
               setState(() {
                 _currentIndex = index;
               });
             },
-            backgroundColor: const Color.fromARGB(255, 36, 93, 190),
+            backgroundColor: const Color.fromARGB(255, 0, 0, 0),
             selectedItemColor: Colors.white,
             unselectedItemColor: Colors.grey,
             selectedFontSize: 16,

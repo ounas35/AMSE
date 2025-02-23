@@ -6,14 +6,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Home")),
+      appBar: AppBar(),
       body: Center(
         child: Text(
-          "Welcome on MyGeekHub !",
+          "Welcome \non \nMyGeekHub !",
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
           ),
+          textAlign: TextAlign.center,
         ),
       ),
     );

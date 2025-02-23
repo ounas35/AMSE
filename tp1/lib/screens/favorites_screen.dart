@@ -10,9 +10,13 @@ class FavoritesScreen extends StatelessWidget {
     final favorites = Provider.of<FavoritesProvider>(context).favoriteMedia;
 
     return Scaffold(
-      appBar: AppBar(title: Text("Liked Media")),
+      appBar: AppBar(title: Text("Liked Medias")),
       body: favorites.isEmpty
-          ? Center(child: Text("No liked media yet!"))
+          ? Center(
+              child: Text("No liked media yet!",
+                  style: TextStyle(
+                    fontSize: 20,
+                  )))
           : ListView.builder(
               itemCount: favorites.length,
               itemBuilder: (context, index) {

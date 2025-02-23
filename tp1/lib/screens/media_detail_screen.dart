@@ -36,7 +36,7 @@ class MediaDetailScreen extends StatelessWidget {
               children: [
                 Icon(Icons.star, color: Colors.yellow),
                 Text(
-                  "${media.rating}/5, review from google",
+                  "${media.rating}/5",
                   style: TextStyle(fontSize: 18),
                 ),
               ],

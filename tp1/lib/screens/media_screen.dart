@@ -5,9 +5,10 @@ import '../providers/favorites_provider.dart';
 import 'media_detail_screen.dart';
 
 class MediaScreen extends StatefulWidget {
-  MediaScreen({super.key});
+  const MediaScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MediaScreenState createState() => _MediaScreenState();
 }
 
@@ -53,9 +54,10 @@ class _MediaScreenState extends State<MediaScreen> {
     Media(
         title: "Valorant",
         image: "assets/valorant.jpg",
-        description: "...",
+        description:
+            "Valorant is a free-to-play tactical FPS by Riot Games where two teams of five players compete to plant or defuse a bomb, while using unique agent abilities. Players need to work together, strategize, and rely on precise shooting. Each agent has distinct abilities, adding depth to gameplay. The main mode is a search-and-destroy style match, with the first team to win 13 rounds claiming victory. The game emphasizes team coordination, strategy, and quick reflexes.",
         rating: 4,
-        type: ''),
+        type: 'Hero shooter, Tactical shooter'),
     Media(
         title: "Overwatch 2",
         image: "assets/overwatch.jpg",
@@ -264,7 +266,6 @@ class _MediaScreenState extends State<MediaScreen> {
                   onPressed: () {
                     Provider.of<FavoritesProvider>(context, listen: false)
                         .toggleFavorite(media);
-                    // Forcer la reconstruction de ce widget pour voir la mise à jour
                     setState(() {});
                   },
                 ),
@@ -288,8 +289,10 @@ class _MediaScreenState extends State<MediaScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Medias"),
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         actions: [
           PopupMenuButton<String>(
+            tooltip: 'Sort by',
             onSelected: (value) {
               setState(() {
                 _sortOption = value;
@@ -298,11 +301,11 @@ class _MediaScreenState extends State<MediaScreen> {
             itemBuilder: (context) => [
               PopupMenuItem(
                 value: 'Alphabetical',
-                child: Text("Sort by alphabetical order : a -> z"),
+                child: Text("alphabetical order (from a to z)"),
               ),
               PopupMenuItem(
                 value: 'Rating',
-                child: Text("Sort by rating : max -> min"),
+                child: Text("rating : (from 5 to 0)"),
               ),
             ],
           )
@@ -311,7 +314,9 @@ class _MediaScreenState extends State<MediaScreen> {
       body: ListView(
         children: [
           buildMediaSection("Video Games", videoGames),
+          SizedBox(height: 20),
           buildMediaSection("Animated Series", animatedSeries),
+          SizedBox(height: 20),
           buildMediaSection("Animated Films", animatedFilms),
         ],
       ),
