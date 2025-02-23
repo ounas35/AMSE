@@ -61,32 +61,35 @@ class _MediaScreenState extends State<MediaScreen> {
     Media(
         title: "Overwatch 2",
         image: "assets/overwatch.jpg",
-        description: "...",
-        rating: 4.8,
-        type: ''),
+        description:
+            "Overwatch was a beacon of hope for the exhausted survivors, eager to rebuild their war-torn world. Once the Crisis ended, its role expanded to addressing humanity's most critical issues and ushering in a new era of optimism and prosperity. Two teams fight to control a robot in the center of the map and push it towards the enemy's base. The team that moves the robot the furthest into the enemy's territory wins the game.",
+        rating: 2.5,
+        type: 'First-person shooter (FPS), Hero shooter'),
     Media(
         title: "Fall Guys",
         image: "assets/fallguys.jpg",
-        description: "...",
-        rating: 4.8,
-        type: ''),
+        description:
+            "Fall Guys is a chaotic battle royale where 60 players compete in obstacle courses. Players navigate through various mini-games, avoiding elimination until only one remains. The last player standing wins a crown. The game features colorful graphics, whimsical characters, and a lighthearted tone, making it fun for players of all ages.",
+        rating: 3.5,
+        type: '	Battle royale, platform'),
     Media(
         title: "Minecraft",
         image: "assets/minecraft.jpg",
-        description: "...",
-        rating: 4.8,
-        type: ''),
+        description:
+            "Minecraft is a sandbox game where players explore a blocky world, gather resources, and build structures. Players can also survive against monsters, craft items, and engage in various adventures. It offers creative and survival modes, allowing for limitless possibilities in gameplay. The game has a large community and supports mods for additional content.",
+        rating: 4.5,
+        type: 'Sandbox, survival'),
     Media(
-        title: "GTA VI",
+        title: "Grand Theft Auto VI",
         image: "assets/gta6.jpg",
-        description: "à venir...",
-        rating: 4.8,
-        type: ''),
+        description: "Coming soon...",
+        rating: 0,
+        type: '	Action-adventure'),
   ];
   //Liste des séries d'animation
   final List<Media> animatedSeries = [
     Media(
-        title: "Attack on Titans (SNK)",
+        title: "Attack on Titans",
         image: "assets/demonslayer.jpg",
         description: "Un anime incroyable",
         rating: 4.7,
@@ -215,7 +218,7 @@ class _MediaScreenState extends State<MediaScreen> {
     Media(
         title: "Spider Man : Beyond the Spider Verse",
         image: "assets/walle.jpeg",
-        description: "arriving in 2025",
+        description: "Coming soon...",
         rating: 4.9,
         type: ''),
   ];
