@@ -50,7 +50,6 @@ class _MyGeekHubAppState extends State<MyGeekHubApp> {
               });
             },
             backgroundColor: const Color.fromARGB(255, 0, 0, 0),
-            selectedItemColor: Colors.white,
             unselectedItemColor: Colors.grey,
             selectedFontSize: 16,
             unselectedFontSize: 14,
