@@ -14,80 +14,77 @@ class MediaScreen extends StatefulWidget {
 
 class _MediaScreenState extends State<MediaScreen> {
   String _sortOption = 'Alphabetical';
-  //Liste des jeux vidéos
   final List<Media> videoGames = [
     Media(
         title: "Zelda Breath of the Wild",
-        image: "assets/zeldabreathofthewild.jpg",
+        image: "../assets/zeldabreathofthewild.jpg",
         description:
             "An open-world adventure where Link explores Hyrule, solves puzzles, and battles foes to save Princess Zelda.",
         rating: 4.7,
         type: 'Action-adventure'),
     Media(
         title: "Pokemon Arceus",
-        image: "assets/pokemonarceus.jpg",
+        image: "../assets/pokemonarceus.jpg",
         description:
             "A Pokémon RPG set in ancient Sinnoh, where players explore an open world and complete the first Pokédex.",
         rating: 3.9,
         type: 'Action role-playing'),
     Media(
         title: "Hearthstone",
-        image: "assets/hearthstone.jpg",
+        image: "../assets/hearthstone.jpg",
         description:
             "A digital card game set in the Warcraft universe, where players build decks and battle opponents.",
         rating: 4.2,
         type: 'Digital collectible card game'),
     Media(
         title: "League of Legends",
-        image: "assets/leagueoflegends.jpg",
+        image: "../assets/leagueoflegends.jpg",
         description:
             "A MOBA where two teams of five champions battle to destroy the enemy base.",
         rating: 3.0,
         type: 'Multiplayer online battle arena (MOBA)'),
     Media(
         title: "World of Warcraft",
-        image: "assets/worldofwarcraft.jpg",
+        image: "../assets/worldofwarcraft.jpg",
         description:
             "An MMORPG where players explore Azeroth, complete quests, and engage in PvE and PvP battles.",
         rating: 4.5,
         type: 'MMORPG'),
     Media(
         title: "Valorant",
-        image: "assets/valorant.jpg",
+        image: "../assets/valorant.jpg",
         description:
             "A tactical FPS where two teams compete using precise shooting and unique agent abilities.",
         rating: 4.0,
         type: 'Hero shooter, Tactical shooter'),
     Media(
         title: "Overwatch 2",
-        image: "assets/overwatch.jpg",
+        image: "../assets/overwatch.jpg",
         description:
             "A team-based FPS where players use heroes with unique abilities to secure objectives.",
         rating: 2.5,
         type: 'FPS, Hero shooter'),
     Media(
         title: "Fall Guys",
-        image: "assets/fallguys.jpg",
+        image: "../assets/fallguys.jpg",
         description:
             "A chaotic battle royale where 60 players compete in obstacle course mini-games.",
         rating: 3.5,
         type: 'Battle royale, Platform'),
     Media(
         title: "Minecraft",
-        image: "assets/minecraft.jpg",
+        image: "../assets/minecraft.jpg",
         description:
             "A sandbox game where players build, explore, and survive in a blocky world.",
         rating: 4.5,
         type: 'Sandbox, Survival'),
     Media(
         title: "Grand Theft Auto VI",
-        image: "assets/gta6.jpg",
+        image: "../assets/gta6.jpg",
         description: "Coming soon...",
         rating: 0.0,
         type: 'Action-adventure'),
   ];
-
-// Liste des séries d'animation
   final List<Media> animatedSeries = [
     Media(
         title: "Attack on Titan",
@@ -160,8 +157,6 @@ class _MediaScreenState extends State<MediaScreen> {
         rating: 3.5,
         type: 'Comedy, Ecchi, Dystopian'),
   ];
-
-// Liste des films d'animation
   final List<Media> animatedFilms = [
     Media(
         title: "Wall-E",

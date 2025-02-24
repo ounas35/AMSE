@@ -19,7 +19,6 @@ class MyGeekHubApp extends StatefulWidget {
 
 class _MyGeekHubAppState extends State<MyGeekHubApp> {
   int _currentIndex = 0;
-  //Liste des différents éléments de la bar de navigation en bas
   final List<Widget> _screens = [
     HomeScreen(),
     MediaScreen(),
