@@ -12,7 +12,7 @@ class AboutScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              '../assets/logo_app.png',
+              'assets/logo_app.jpg',
               width: 300,
               height: 300,
             ),

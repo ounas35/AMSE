@@ -23,14 +23,34 @@ flutter:
   assets:
     - assets/zeldabreathofthewild.jpg
     - assets/pokemonarceus.jpg
-    - assets/leagueoflegends.jpg
     - assets/hearthstone.jpg
-    - assets/valorant.jpg
-    - assets/gta6.jpg
-    - assets/fallguys.jpg
-    - assets/overwatch.jpg
+    - assets/leagueoflegends.jpg
     - assets/worldofwarcraft.jpg
+    - assets/valorant.jpg
+    - assets/overwatch.jpg
+    - assets/fallguys.jpg
     - assets/minecraft.jpg
+    - assets/gta6.jpg
+    - assets/attackontitan.jpg
+    - assets/chainsawman.jpg
     - assets/demonslayer.jpg
+    - assets/darlinginthefranxx.jpg
+    - assets/yourlieinapril.jpg
+    - assets/oshinoko.jpg
+    - assets/frieren.jpg
+    - assets/goldorak.jpg
+    - assets/eightysix.jpg
+    - assets/shimoneta.jpg
     - assets/walle.jpeg
+    - assets/shrek.jpg
+    - assets/mariobros.jpg
+    - assets/yourname.jpg
+    - assets/iwanttoeatyourpancreas.jpg
+    - assets/weatheringwithyou.jpg
+    - assets/spidermanintothespiderverse.jpg
+    - assets/up.jpg
+    - assets/suzume.jpeg
+    - assets/spidermanbeyondthespiderverse.jpg
+    - assets/logo_app.jpg
+
   uses-material-design: true
